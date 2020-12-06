@@ -345,8 +345,10 @@ img {
 
 .social-list.list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
+  width: 206px;
+  margin: 0 auto;
   margin-bottom: 30px;
   padding-left: 0;
 }
@@ -358,9 +360,46 @@ img {
 
   width: 44px;
   height: 44px;
-  /* background-color: #2196f3; */
   border-radius: 50%;
 }
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+
+.social-list.link:hover,
+.social-list.link:focus {
+  background-color: var(--accent-text);
+}
+
+.social-list.link:hover .social-list-icon,
+.social-list.link:focus .social-list-icon {
+  fill: var(--white);
+}
+
+/* Наши Клиенты */
+.section.clients {
+  padding-top: 94px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
+}
+
+.clients.list {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+/* доделать растояния и фокус и остальное, убрать со всех карточек тень она будет при наведении */
 
 /* подвал */
 .page-footer {
