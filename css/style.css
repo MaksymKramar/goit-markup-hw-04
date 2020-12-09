@@ -67,6 +67,9 @@ img {
 .header.container {
   display: flex;
   align-items: center;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* название фирмы */
@@ -101,8 +104,8 @@ img {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   color: var(--main-text-color);
 }
@@ -119,14 +122,27 @@ img {
   display: flex;
 
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--title-text-color);
 }
 
+.contact-icon {
+  fill: currentColor;
+}
+
 .contact-case:not(:last-child) {
   margin-right: 30px;
+}
+
+.contact.link {
+  align-items: center;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contact-icon {
+  margin-right: 10px;
 }
 
 .contact.link:hover,
@@ -134,23 +150,14 @@ img {
   color: var(--accent-text);
 }
 
-.contact.link:hover .mail-icon,
-.contact.link:focus {
+.contact.link:hover .contact-icon,
+.contact.link:focus .contact-icon {
   fill: var(--accent-text);
 }
+
 .contact-case {
   display: flex;
   align-items: center;
-}
-.mail-icon,
-.phone-icon {
-  margin-right: 10px;
-}
-
-.mail-icon:hover,
-.mail-icon:focus {
-  content: '';
-  fill: var(--accent-text);
 }
 
 .site-nav.list {
@@ -182,7 +189,12 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--background-hero-section);
+
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  min-height: 600px;
 }
 .hero-title {
   margin-top: 0;
@@ -403,6 +415,16 @@ img {
   margin-right: 30px;
 }
 
+.clients-list.link:hover .clients-logo,
+.clients-list.link:focus .clients-logo {
+  fill: var(--accent-text);
+}
+
+.logo-container:hover,
+.logo-container:focus {
+  border: 1px solid var(--accent-text);
+}
+
 /* подвал */
 .page-footer {
   padding-top: 60px;
@@ -457,18 +479,19 @@ img {
   color: var(--footer-link-color);
 }
 
-.appeal {
-  display: inline-block;
-  text-align: center;
-}
-
 .accent {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   text-transform: uppercase;
   color: var(--white);
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+.appeal .social-list.list {
+  margin-bottom: 0;
 }
 
 .footer-social-list.link {
