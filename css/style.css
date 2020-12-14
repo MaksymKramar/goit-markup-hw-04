@@ -175,9 +175,6 @@ img {
 
 /* делаем блок герой */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -186,12 +183,17 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--background-hero-section);
+  background-position: center;
 
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
   min-height: 600px;
+
+  text-align: center;
 }
 
 .hero-title {
